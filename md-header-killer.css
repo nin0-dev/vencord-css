@@ -1,0 +1,10 @@
+div[id^="message-content"] h1,div[id^="message-content"] h2,div[id^="message-content"] h3 {
+    font-size: 1em !important;
+    font-weight: normal !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+div[id^="message-content"] h1::before, div[id^="message-content"] h2::before, div[id^="message-content"] h3::before {
+    content: var(--header-override-prefix);
+    font-size: xx-small;
+}
