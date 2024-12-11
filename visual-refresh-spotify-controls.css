@@ -1,0 +1,45 @@
+:root {
+    --album-name: none;
+}
+.vc-spotify-button-row {
+    margin-top: 7px;
+}
+.vc-spotify-button-row button {
+    margin: 0 2px;
+}
+#vc-spotify-player {
+    padding: 12px;
+    background-color: var(--background-base-low) !important;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#vc-spotify-titles div:last-child {
+    display: var(--album-name);
+    font-size: 12px !important;
+}
+#vc-spotify-progress-bar div[class^="barFill_"] {
+    background-color: var(--interactive-active) !important;
+}
+#vc-spotify-progress-bar div[class^="sliderContainer_"] div[class^="bar_"] {
+    height: 2px !important;
+}
+#vc-spotify-progress-bar {
+    display: flex !important;
+    flex-direction: row !important;
+}
+#vc-spotify-player div[class^="grabber_"] {
+    position: relative;
+    top: 1px;
+    margin-left: 1px !important;
+}
+.vc-spotify-progress-time {
+    margin-top: 5px;
+    font-family: monospace;
+}
+*:has(> .vc-spotify-artist) {
+    font-size: 12px !important;
+}
+#vc-spotify-song-title {
+    font-size: 14px;
+}
